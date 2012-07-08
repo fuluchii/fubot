@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+
+ops = {}
+OptionParser.new do |opts|
+   opts.banner = "Here is fuluchii's private robot----fubot."
+   ops[:switch]=false
+   
+   opts.on('-c','-create','Create a fubot') do
+       ops[:switch] = true
+   end
+   opts.on('-')
+end.parse!
+
+if ops[:create] 
+end
